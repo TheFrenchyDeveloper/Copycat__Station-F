@@ -1,0 +1,36 @@
+/* 
+    ********** HEADER **********
+*/
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__logo {
+  width: 125px;
+  height: 25px;
+}
+
+.nav__list-links {
+  display: flex;
+  list-style: none;
+  column-gap: 20px;
+  align-items: center;
+}
+
+.nav__link {
+  text-transform: uppercase;
+}
+
+.nav__page-link {
+  text-decoration: none;
+}
+
+.nav__link-button {
+  color: white;
+  background-color: black;
+  padding: 10px 15px;
+  border-radius: 20px;
+}
