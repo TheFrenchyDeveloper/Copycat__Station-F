@@ -18,6 +18,10 @@ ul, ol {
   list-style: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /*
     ********** STYLE GLOBAL **********
 */
@@ -41,6 +45,13 @@ ul, ol {
 .title-2 {
   font-size: 40px;
   margin-bottom: 20px;
+  line-height: 1.25;
+}
+
+.text-paragraph {
+  line-height: 1.5;
+  font-size: large;
+  flex-grow: 1;
 }
 
 .button {
@@ -48,8 +59,27 @@ ul, ol {
   color: white;
   border-radius: 20px;
   padding: 10px 20px;
-  background-color: red;
   display: inline-block;
+}
+
+.button-orange {
+  background: linear-gradient(90deg, #ff3592, #ffb800 50% 100%);
+  background-size: 200% 100%;
+  background-position: right;
+  transition: all 0.5s;
+}
+
+.button-orange:hover {
+  background-position: left;
+}
+
+.button-black {
+  background-color: black;
+  transition: background-color 0.25s;
+}
+
+.button-black:hover {
+  background-color: gray;
 }
 
 /* 
@@ -155,7 +185,6 @@ ul, ol {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  line-height: 1.50;
 }
 
 .programs .title-2 {
@@ -165,10 +194,6 @@ ul, ol {
 
 .programs .container-texts .button {
   margin-top: 50px;
-}
-
-.programs .container-texts p {
-  flex-grow: 1;
 }
 
 .programs .container-images {
@@ -189,4 +214,33 @@ ul, ol {
   width: 100%;
   height: 100%;
   object-fit: contain;
+}
+
+/*
+    ********** ONLINE **********
+*/
+
+.online {
+  background: linear-gradient(180deg, #202020 0% 50%, white 50% 100%);
+}
+
+.online .online-content {
+  display: flex;
+  padding: 75px 50px 50px;
+  background: linear-gradient(90deg, #ff3592, #ffb800);
+}
+
+.online img {
+  width: 50%;
+  padding-right: 50px;
+}
+
+.online .container-texts {
+  width: 50%;
+  color: white;
+  padding-right: 10%;
+}
+
+.online .container-texts a {
+  margin-top: 50px;
 }
